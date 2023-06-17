@@ -39,7 +39,7 @@ function BlogMap({key, data, newUser}:Props) {
                 className="w-[350px] lg:w-[530px] mx-auto object-contain h-[350px] lg:h-[500px] shadow-lg"
 
              />
-            <div className=" items-center max-w-[300px] mx-auto  md:max-w-[300px] lg:max-w-xl p-2 gap-4 flex flex-col text-white ">
+            <div className=" items-center max-w-[200px]  md:max-w-[300px] lg:max-w-xl p-2 gap-4 flex flex-col text-white ">
                 <h1 className="text-xl text-center underline p-2 decoration-slate-50 md:text-2xl font-bold italic">{data?.name}</h1>
                 <p className='text-xs md:text-lg'>{data?.description}</p>
             </div> 
