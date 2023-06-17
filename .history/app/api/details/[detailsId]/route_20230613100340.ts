@@ -1,5 +1,5 @@
 import { getUser } from "@/content/getUser"
-import prisma from '../../../../prisma/prismadb'
+import prisma from '../../../../lib/prismadb'
 import { NextResponse } from "next/server"
 
 interface IParams {

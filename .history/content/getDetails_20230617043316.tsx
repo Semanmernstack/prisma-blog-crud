@@ -1,4 +1,4 @@
-import prisma from '../prisma/prismadb'
+import prisma from '../lib/prismadb'
 export default async function getBlogs(){
     try {
         const blogs = await prisma?.blog.findMany({
