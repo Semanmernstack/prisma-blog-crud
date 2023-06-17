@@ -39,9 +39,9 @@ function BlogMap({key, data, newUser}:Props) {
                 className="w-[430px] object-contain h-[430px] shadow-lg"
 
              />
-            <div className="w-[400px] gap-4 flex flex-col text-white ">
+            <div className="w-[500px] gap-4 flex flex-col text-white ">
                 <h1 className="text-xl text-center underline p-2 decoration-slate-50 md:text-2xl font-bold italic">{data?.name}</h1>
-                <p className='text-sm'>{data?.description}</p>
+                <p className='text-sm '>{data?.description}</p>
             </div> 
             
         </div>
