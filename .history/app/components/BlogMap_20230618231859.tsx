@@ -33,7 +33,7 @@ function BlogMap({key, data, newUser}:Props) {
     
 
   return (
-    <div className=' flex flex-col lg:flex-row hover:scale-105 transition ease-in   shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
+    <div className=' flex flex-col lg:flex-row    shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
         <div></div>
         <div className='flex flex-col lg:flex-row  gap-2' >
             <img src={data?.imageSrc} alt=" image"
@@ -46,7 +46,7 @@ function BlogMap({key, data, newUser}:Props) {
                 <p className='text-xs font-serif md:text-lg'>{data?.description}</p>
             </div> 
 
-            <div className='p-4 lg:text-lg'>
+            <div className='p-4'>
                 {data?.userId === newUser?.id && (
 
                     <div className="flex items-center  justify-center gap-4 underline hover:animate-pulse text-white mt-2 hover:text-slate-500 cursor-pointer text-sm ">

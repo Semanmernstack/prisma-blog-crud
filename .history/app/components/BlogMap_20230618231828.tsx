@@ -33,7 +33,7 @@ function BlogMap({key, data, newUser}:Props) {
     
 
   return (
-    <div className=' flex flex-col lg:flex-row hover:scale-105 transition ease-in   shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
+    <div className=' flex flex-col lg:flex-row    shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
         <div></div>
         <div className='flex flex-col lg:flex-row  gap-2' >
             <img src={data?.imageSrc} alt=" image"
@@ -43,10 +43,10 @@ function BlogMap({key, data, newUser}:Props) {
              <div className="lg:flex lg:flex-col">
             <div className=" items-center max-w-[300px] mx-auto  md:max-w-[300px] lg:max-w-xl p-2 gap-4 flex flex-col text-white ">
                 <h1 className="text-xl text-center underline p-2 decoration-slate-50 md:text-2xl font-bold italic">{data?.name}</h1>
-                <p className='text-xs font-serif md:text-lg'>{data?.description}</p>
+                <p className='text-xs md:text-lg'>{data?.description}</p>
             </div> 
 
-            <div className='p-4 lg:text-lg'>
+            <div className='p-4'>
                 {data?.userId === newUser?.id && (
 
                     <div className="flex items-center  justify-center gap-4 underline hover:animate-pulse text-white mt-2 hover:text-slate-500 cursor-pointer text-sm ">
