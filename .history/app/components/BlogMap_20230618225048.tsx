@@ -33,7 +33,7 @@ function BlogMap({key, data, newUser}:Props) {
     
 
   return (
-    <div className=' flex flex-col   shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
+    <div className='shadow-2xl gap-2 space-y-3 mb-4 max-w-xl md:max-2xl: lg:max-w-5xl mx-auto text-white rounded-md bg-gray-950  p-4'>
         <div className='flex flex-col lg:flex-row  gap-2' >
             <img src={data?.imageSrc} alt=" image"
                 className="w-[350px] lg:w-[530px] mx-auto object-contain h-[350px] lg:h-[500px] shadow-lg"
@@ -45,19 +45,15 @@ function BlogMap({key, data, newUser}:Props) {
             </div> 
             
         </div>
-        <div>
         {data?.userId === newUser?.id && (
 
-            <div className="flex items-center  justify-center gap-4 underline hover:animate-pulse text-white mt-2 hover:text-slate-500 cursor-pointer text-sm ">
+            <div className="flex items-center text-white justify-center gap-4 underline hover:animate-pulse text-white mt-2 hover:text-slate-500 cursor-pointer text-sm ">
                 <button  onClick={onDelete} className=" cursor-pointer " >Deletete </button>
                 <button onClick={() => router.push(`/details/${data.id}`)} className=" cursor-pointer " > Edit</button>
-
+            
             </div>
 
         )}
-
-        </div>
-       
     </div>
   )
 }
