@@ -60,7 +60,7 @@ function page() {
             </div>
 
             <div  className='flex flex-col w-full justify-center items-center mt-2 p-2 gap-2'>
-                <InputData  placeholder='Blog header' id='name' type='text' value={state.name} name='name' onChange={handleChange}/>
+                <InputData placeholder='Blog header' id='name' type='text' value={state.name} name='name' onChange={handleChange}/>
                 <InputData  big placeholder='Blog content or description' id='description' type='text' value={state.description} name='description' onChange={handleChange}/>
             
                 <div>
