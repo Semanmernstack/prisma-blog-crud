@@ -24,7 +24,7 @@ export async function getUser() {
         return {
             ...newUser,
            
-           
+            emailVerified: newUser.emailVerified?.toISOString() || null,
             
           };
     } catch (error:any) {

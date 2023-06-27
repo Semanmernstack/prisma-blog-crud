@@ -6,13 +6,13 @@ import { StaticImageData } from '@/image'
 import { Router } from 'next/router'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
-
+import { SafeBlog, SafeUser } from '@/Types/types'
 
 
 interface Props {
     key: string
-    data: Blog
-    newUser?: User | null  
+    data: SafeBlog
+    newUser: SafeUser | null  
     
 }
 

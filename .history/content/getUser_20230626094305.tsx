@@ -22,7 +22,7 @@ export async function getUser() {
 
 
         return {
-            ...newUser,
+            ...newUser
            
            
             

@@ -7,7 +7,7 @@ import { User } from "@prisma/client"
 
 
 export default async function Home() {
-  const newUser = await getUser()
+  const newUser: User = await getUser()
   const blogs = await getBlogs()
   return (
     <main className="flex flex-col items-center max-h-full   text-white shadow-inner justify-center space-y-3 max-w-xl md:max-w-2xl lg:max-w-5xl rounded-md mx-auto p-4 ">

@@ -18,7 +18,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
 
-  const newUser = await getUser()
+  const newUser  = await getUser()
   return (
     <html lang="en">
       <body className="bg-gray-300  shadow-slate-950"> <Nav newUser ={newUser} />        {children}</body>
